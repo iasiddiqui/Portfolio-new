@@ -110,7 +110,7 @@ html{
 /* home section ki styling*/
 .home{
     display: flex;
-    background: url("images/bannerr1.jpg") no-repeat center;
+    background: url("images\banner.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -345,23 +345,23 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/*about section ki styling*/
+/*about Us*/
 
 
 .about .title::after{
     content: "who i am";
 }
 .about .about-content .left{
-    width: 45%;
+    width: 40%;
 }
 .about .about-content .left img{
     height: 400px;
-    width: 400px;
-    object-fit: cover;
+    width: 300px;
+    /* object-fit: cover; */
     border-radius: 6px;
 }
 .about .about-content .right{
-    width: 55%;
+    width: 60%;
 }
 .about .about-content .right .text{
     font-size: 25px;
@@ -502,13 +502,13 @@ section .title::after{
     width: 70%;
 }
 .skills-content .right .css::before{
-    width: 50%;
+    width: 60%;
 }
 .skills-content .right .js::before{
-    width: 0%;
+    width: 50%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 50%;
 }
 
 
