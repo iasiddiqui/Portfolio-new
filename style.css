@@ -110,7 +110,7 @@ html{
 /* home section ki styling*/
 .home{
     display: flex;
-    background: url("images\banner.jpg") no-repeat center;
+    background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -391,9 +391,16 @@ section .title::after{
     background: none;
 }
 /* Profiles section styling*/
+
 .services, .teams{
-    color:#fff;
-    background: #111;
+    display: flex;
+    background: url("images\bg.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
 }
 .services .title::before,
 .teams .title::before{
