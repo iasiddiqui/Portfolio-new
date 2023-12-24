@@ -391,16 +391,11 @@ section .title::after{
     background: none;
 }
 /* Profiles section styling*/
-
 .services, .teams{
-    display: flex;
-    background: url("images\bg.jpg") no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    color:#fff;
+    background: url("images/banner.jpg") no-repeat center;
+
+    
 }
 .services .title::before,
 .teams .title::before{
@@ -634,7 +629,7 @@ footer span a:hover{
 /* .Projects */
 
 .Projects{
-    background: whitesmoke;
+    background: url("images/banner.jpg") no-repeat center;
 }
 .Projects .title::after{
     content: "Projects";
