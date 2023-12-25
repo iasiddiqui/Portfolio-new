@@ -23,7 +23,7 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-/*navbar ki styling */
+/*navbar styling */
 .navbar{
     position: fixed;
     width: 100%;
@@ -393,7 +393,7 @@ section .title::after{
 /* Profiles section styling*/
 .services, .teams{
     color:#fff;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/bg.jpg") no-repeat center;
 
     
 }
@@ -515,6 +515,7 @@ section .title::after{
 
 
 /*contact seciton styling*/
+
 .contact .title::after{
     content: "get in touch";
 }
@@ -629,13 +630,14 @@ footer span a:hover{
 /* .Projects */
 
 .Projects{
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/bg.jpg") no-repeat center;
+    color: #fff;
 }
 .Projects .title::after{
     content: "Projects";
 }
 .Projects .carousel .card{
-    background: #b3b3b3;
+    background: #c7a7c5;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
