@@ -320,14 +320,14 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
 section .title::before{
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     left: 50%;
     width: 180px;
     height: 3px;
@@ -336,11 +336,11 @@ section .title::before{
 }
 section .title::after{
     position: absolute;
-    bottom: -8px;
+    bottom: 3px;
     left: 50%;
     font-size: 20px;
     color: rgb(158, 98, 149);
-    padding: 0 5px;
+    padding: 0 14px;
     background: #fff;
     transform: translateX(-50%);
 }
@@ -417,6 +417,10 @@ section .title::after{
 }
 .services .serv-content .card:hover{
     background: rgb(0, 0, 0);
+	transform: scale(1.1);
+	background: rgb(158, 98, 149);
+	z-index: 5;
+	box-shadow: 2px 2px 2px #ffffff;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -431,12 +435,15 @@ section .title::after{
 }
 .services .serv-content .card:hover i{
     color: #fff;
+    
 }
 .services .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+
 
 /* skills section styling */
 
@@ -629,12 +636,19 @@ footer span a:hover{
 
 /* .Projects */
 
-.Projects{
-    background: url("images/bg.jpg") no-repeat center;
-    color: #fff;
+
+.Projects .title::before,
+.teams .title::before{
+    background: white;
 }
 .Projects .title::after{
     content: "Projects";
+    background: #111;
+   
+}
+.Projects{
+    background: url("images/bg.jpg") no-repeat center;
+    color: #fff;
 }
 .Projects .carousel .card{
     background: #c7a7c5;
@@ -645,7 +659,10 @@ footer span a:hover{
     transition: all 0.3s ease;
 }
 .Projects .carousel .card:hover{
-    background: rgb(158, 98, 149);
+    background: rgb(222, 101, 238);
+	transform: scale(1.1);
+	z-index: 5;
+	box-shadow: 2px 2px 2px #ffffff;
 }
 .Projects .carousel .card .box{
     display: flex;
