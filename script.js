@@ -57,3 +57,43 @@ $(document).ready(function(){
         }
     });
 });
+document.addEventListener('DOMContentLoaded', (event) => {
+    const form = document.getElementById('contactForm');
+  
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+  
+      // Get the form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+  
+      // Create a data object to send to the server
+      const formData = {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+      };
+  
+      // Send the data to the server using Fetch API
+      fetch('https://example.com/api/submit-form', {
+        method: 'POST', // HTTP method
+        headers: {
+          'Content-Type': 'application/json' // Set the content type to JSON
+        },
+        body: JSON.stringify(formData) // Convert the data object to a JSON string
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data); // Handle success response
+        // Optionally reset the form after successful submission
+        form.reset();
+      })
+      .catch((error) => {
+        console.error('Error:', error); // Handle error response
+      });
+    });
+  });
+  

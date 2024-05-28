@@ -33,7 +33,7 @@ html{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
+    padding: 8px 0;
     background: rgb(158, 98, 149);
 }
 .navbar .max-width{
