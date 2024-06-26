@@ -57,6 +57,10 @@ $(document).ready(function(){
         }
     });
 });
+
+
+// form
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const form = document.getElementById('contactForm');
   
